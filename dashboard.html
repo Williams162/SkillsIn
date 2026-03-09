@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Welcome {{ current_user.first_name }}</h2>
+
+<p><strong>Qualification:</strong> {{ current_user.qualification }}</p>
+<p><strong>Address:</strong> {{ current_user.address }}</p>
+<p><strong>Headline:</strong> {{ current_user.headline }}</p>
+<p><strong>Bio:</strong> {{ current_user.bio }}</p>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Edit Profile</h2>
+
+<form method="POST">
+    <input type="text" name="address" value="{{ current_user.address }}" required><br><br>
+    <input type="text" name="qualification" value="{{ current_user.qualification }}" required><br><br>
+    <input type="text" name="headline" value="{{ current_user.headline }}"><br><br>
+    <textarea name="bio">{{ current_user.bio }}</textarea><br><br>
+    <button type="submit">Update Profile</button>
+</form>
+
+{% endblock %}
